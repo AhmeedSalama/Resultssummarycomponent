@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --bg-light-slate-blue: hsl(252, 100%, 67%);
+    --bg-light-royal-blue: hsl(241, 81%, 54%);
+    --circle-violet-blue: hsla(256, 72%, 46%, 1);
+    --circle-persian-blue: hsla(241, 72%, 46%, 0);
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+  }
+
+
+body{
+    font-family: "Hanken Grotesk", sans-serif;
+    background-color: #eee;
+}
+
+.name-and-icon{
+    display: flex;
+}
+
+
+
+.container{
+    width: 700px;
+    height: 470px;
+    margin: 50px auto;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .your-Result{
+width: 45%;
+background-color: #573df8;
+border-radius: 30px;
+display: flex;
+flex-direction: column;
+padding: 0px 30px;
+text-align: center;
+}
+
+.container .your-Result h1{
+color: var(--light-lavender);
+font-size: 25px;
+margin: 30px 0px;
+}
+.number-for-result{
+background-color: #472cdd;
+border-radius: 50%;
+width: 160px;
+height: 160px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+align-self: center;
+margin: 30px 0px;
+
+}
+
+.container .your-Result  p:first-child{
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.your-Result p:last-child{
+    color: var(--light-lavender);
+    width: 235px;
+    align-self: center;
+}
+.container .your-Result .Great{
+    color: white;
+    font-size: 25px;
+    margin: 10px 0px;
+    font-weight: bold;
+}
+
+.container .your-Result .number-for-result p:last-child{
+    color: var(--light-lavender);
+}
+
+
+.container .summary{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.summary h2{
+    color: var(--dark-gray-blue);
+    margin-bottom: 20px;
+}
+
+
+.reaction{
+    background-color: hsla(0, 100%, 67%,0.1);
+}
+
+.Memory{
+    background-color: hsla(39, 100%, 56%,0.1);
+}
+.Verbal{
+    background-color: hsla(166, 100%, 37%,0.1);
+}
+.Visual{
+    background-color: hsla(234, 85%, 45%,0.1); 
+}
+
+
+.reaction,
+.Memory,.Verbal,.Visual{
+    
+    margin-bottom: 15px;
+    padding:  15px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.reaction .name-and-icon p{
+    color: var(--light-red);
+    margin-left: 5px;
+    
+}
+.num-for-reaction p span{
+    color: var(--light-lavender);
+    
+    
+}
+.Memory .name-and-icon p{
+    color: var(--orangey-yellow);
+    margin-left: 5px;
+}
+.Verbal .name-and-icon p{
+    color: var(--green-teal);
+    margin-left: 5px;
+}
+.Visual .name-and-icon p{
+    color: var(--cobalt-blue);
+    margin-left: 5px;
+}
+
+.summary button{
+    background-color: var(--dark-gray-blue);
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 15px 0px;
+    border-radius: 30px;
+    margin-top: 21px;
+    font-size: 17px;
+
+}
+
+.summary button:hover,.summary button:active{
+    background-color: #573df8;
+
+}
+
+@media (max-width: 699px) {
+    .container {
+        width: 100%;
+        flex-direction: column;
+        height: auto; 
+        margin: 0;
+    }
+
+    .container .summary {
+        width: 100%;
+    }
+
+    .container .your-Result {
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        height: 420px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .number-for-result{
+        margin: 20px 0px;
+    }
+    .container .your-Result h1{
+        margin: 10px 0px;
+        font-size: 20px;
+    }
+
+    .your-Result p:last-child {
+        width: 257px;
+}
+
+}
